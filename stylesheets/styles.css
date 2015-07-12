@@ -354,3 +354,12 @@ footer p + p {
     content: 'at http://github.com/';
   }
 }
+/**Êó±êĞüÍ£***/
+a:hover 
+{
+	color: #FF0000;
+}
+.sourcestyle
+{
+	border : 2px solid gray;
+}

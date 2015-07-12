@@ -1,0 +1,121 @@
+/*****大的div包裹起来： 包裹superstart_left 和 superstart【右侧的】****/
+.container
+{
+	width: 1280px;
+}
+
+
+/***div块选择器 - 让整个布局靠页面右边***/
+.superstart
+{
+	width : 600;
+	height : 630;
+	border : 1px solid gray;
+	margin-top : 20px;
+	float : right;
+}
+/***设置无序列表的布局，清空布局，这样可以方便重新设置布局; 
+	text-align : center;设置内容居中 - 父子选择器***/
+.faceul
+{
+	padding : 0;
+	margin-left : 20px;
+	margin-top : 20px;
+	width : 560;
+	height : 140;
+	border : 1px solid green;
+	
+	text-align : center;
+}
+/***控制无序列表元素的是否换行等风格【主要是浮动】 - 父子选择器***/
+.faceul li
+{
+	width : 120px;
+	height: 110px;
+	border : 1px solid blue;
+	float : left;
+	margin-left : 15px;
+	margin-top : 15px;
+}
+/**控制图片的父子选择器*/
+.faceul img 
+{
+	width : 110px;
+	height: 80px;
+	margin-top : 5px;
+}
+/**特殊图片的格式的id选择器 - 主要目的就死在图片名称右边标注等级*/
+#imgspecial
+{
+	width : 13px;
+	height: 13px;
+}
+/**控制文本布局**/
+.faceul a
+{
+	margin-left : 20px;
+	color : black;
+}
+/****完善布局-添加分割栏标识 - 主要采用父子选择器****/
+.superstart span
+{
+	font-size : 30px;
+	font-weight : bold;
+}
+.superstart span span
+{
+	font-size : 25px;
+	float : right;
+	color : blue;
+	font-style : italic;
+	text-decoration : underline;
+	margin-right : 30px;
+}
+/**鼠标悬停***/
+a:hover 
+{
+	color: #FF0000;
+}
+
+
+/****开始制作左侧区域****/
+.superstart_left
+{
+	width : 656;
+	height : 630;
+	border : 1px solid gray;
+	margin-top : 20px;
+	margin-left : 20px;
+	float : left;
+	
+	text-align : center;
+}
+/***父子选择器*控制文本****/
+.superstart_left span
+{
+	font-size : 50px;
+}
+/**父子选择器*控制表格***/
+.superstart_left table
+{
+	width : 656px;
+	height : 518px;
+	border : 1px solid gray;	
+}
+.superstart_left table td
+{
+	border : 1px solid red;
+}
+/****控制图片*(**/
+#timelineImg
+{
+	width : 100px;
+	height : 500px;
+	margin-left : 10px;
+}
+#timecontentImg
+{
+	width : 520px;
+	height : 100px;
+	margin-left : 5px;
+}
