@@ -2,13 +2,14 @@
 .container
 {
 	width: 1280px;
+	margin : auto;
 }
 
 
 /***div块选择器 - 让整个布局靠页面右边***/
 .superstart
 {
-	width : 600;
+	width : 46%;
 	height : 630;
 	border : 1px solid gray;
 	margin-top : 20px;
@@ -81,7 +82,7 @@ a:hover
 /****开始制作左侧区域****/
 .superstart_left
 {
-	width : 656;
+	width : 51%;
 	height : 630;
 	border : 1px solid gray;
 	margin-top : 20px;
@@ -98,13 +99,13 @@ a:hover
 /**父子选择器*控制表格***/
 .superstart_left table
 {
-	width : 656px;
-	height : 518px;
+	width : 648px;
+	height : 515px;
 	border : 1px solid gray;	
 }
 .superstart_left table td
 {
-	border : 1px solid red;
+	border : 1px solid silver;
 }
 /****控制图片*(**/
 #timelineImg
@@ -118,4 +119,12 @@ a:hover
 	width : 520px;
 	height : 100px;
 	margin-left : 5px;
+}
+.suofang 
+{
+	MARGIN: auto;WIDTH: 200px;
+}
+.suofang img
+{
+	MAX-WIDTH: 100%!important;HEIGHT: auto!important;width:expression(this.width > 200 ? "200px" :     this.width)!important;
 }
