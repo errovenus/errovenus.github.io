@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<!--错误引入方法： <script type="text/javascript" src="func.js/">-->
+		<script type="text/javascript" src="javascripts/collider.js">
+		</script>
+		<script type="text/javascript">
+			<!--基本的知识和其它语言差不多，包括if、switch、递归、函数、函数指针等，学过其它语言应该都会ok的-->
+			var a = 20;
+			var b = 20;
+			document.write("<a style='" + "border: 1px solid blue; background:green;" + "'>" + a+b + "</a>");
+
+			<!--不同数据类型的数组，类似object[]-->
+			var c = [2, 2, 3, 4, "a", 11.00021];
+			for (var i = 0; i < c.length; ++i)
+			{
+				//document.write(c[i] + " ");
+				document.write("<a style='" + "border: 1px solid blue; background:green;" + "'>" + c[i] + "</a>");
+			}
+		</script>
+		
+		<script type="text/javascript">
+			function objF()
+			{
+				var sex = "man";	/*undefined【secret】*/
+				name = "xiaoli";	/*undefined*/
+				this.age = 12;
+				this.show = function show()
+				{
+					return name;
+				}
+			}
+			var oj = new objF();
+			document.write("<a style='" + "border: 1px solid blue; background:green;" + "'>" + "顾客大人: " + oj.name + " " + oj.age + " " + oj.sex + " " + oj.show() + "</a>");
+		</script>
+		<!--开始制作 利用相对布局进行定位和范围的限定【正好可以利用div的宽度和高度、和图片自身大小进行相关计算】-->
+		<script type="text/javascript" language=JavaScript charset="UTF-8">
+			///< 初始化数据
+			init();
+			///< 调用方向键，方向键要处理所有的事件【碰撞、越界等】
+			keycontrol();
+			/*构造第一条马路的障碍物【从下往上数】5s产生一个障碍物*/
+			setInterval("randomRoad1()", 5000);
+		</script>
+	</head>
+	<body>
+
+		<div style="border: 1px solid blue; background:green;">
+			<div style="float:right">
+				<a style="color:red; margin-right:20px; font-size:25px">@TEST</a>
+			</div>
+			<input type="button" onclick="variableParams()" value="显示消息框" />
+			
+			</br>
+				<script type="text/javascript">
+					document.write("xxx");
+					/**共用一个mesage函数，同时后传入的构造函数的参数将作为最后的值被获取****/
+					var sh1 = new share("tet", "tet2");
+					var sh2 = new share("tet5", "tet6");
+					var sh3 = new share("tet8", "tet9");
+					if (sh1.message == sh2.message)
+					{
+						sh1.message();	/**tet5 tet6*/
+						sh2.message();	/**tet5 tet6*/
+						document.write("相同");
+					}
+					else
+					{
+						sh1.message();
+						sh2.message();
+						document.write("不同");
+					}
+				</script>
+			</br>
+
+			</br>
+				<script type="text/javascript">
+					<!--@动态显示......功能，利用定时执行函数-->
+					setInterval("rollingdot()", 200);
+				</script>
+			</br>		
+		</div>
+
+		<h1 id="myHeader" onclick="toGameCenter()"><a href="#" style="text-decoration:underline;">下面开始小游戏</a></h1>
+
+		<h1><font size=5 color="red" >提示：W A D S是方向控制键</font></h1>
+
+		<!--构造天天过马路场景 800*380， 总过需要过四条马路， 每条高度76-->
+		<div id="scene" style="border: 1px solid blue; background:gray; height:380px; width:798px; margin:auto">
+			<div style="border: 0px solid blue; background:#40E0D0; height:76px; width:100%px;"></div>
+			<div style="border: 0px solid blue; background:#228B22; height:76px; width:100%px;"></div>
+			<div style="border: 0px solid blue; background:#6B8E23; height:76px; width:100%px;"></div>
+			<div style="border: 0px solid blue; background:#228B22; height:76px; width:100%px;">
+				<img id="monster1" src="images/carblue.png" height="38" width="38" style="position:relative; left:760px; top:38px; visibility:hidden" />
+			</div>
+			<div style="border: 0px solid blue; background:yellow; height:76px; width:100%px;">
+				<img id="me" src="images/crossroadme.png" height="38" width="38" style="position:relative; left:380px; top:38px" />
+			</div>
+		</div>
+
+	</body>
+</html>
