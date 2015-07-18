@@ -2,20 +2,20 @@
 <html>
 	<head>
 
-		 <meta http-equiv="keywords" content="HuangLei_LEGO,errovenus.io,ÍøÂçĞ¡¼á¹û">
+		 <meta http-equiv="keywords" content="HuangLei_LEGO,errovenus.io,ç½‘ç»œå°åšæœ">
 		 <meta http-equiv="description" content="errovenus.github.io">
-		 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		 <meta charset="gb2312">
 
-		<!--´íÎóÒıÈë·½·¨£º <script type="text/javascript" src="func.js/">-->
+		<!--é”™è¯¯å¼•å…¥æ–¹æ³•ï¼š <script type="text/javascript" src="func.js/">-->
 		<script type="text/javascript" src="javascripts/collider.js">
 		</script>
 		<script type="text/javascript">
-			<!--»ù±¾µÄÖªÊ¶ºÍÆäËüÓïÑÔ²î²»¶à£¬°üÀ¨if¡¢switch¡¢µİ¹é¡¢º¯Êı¡¢º¯ÊıÖ¸ÕëµÈ£¬Ñ§¹ıÆäËüÓïÑÔÓ¦¸Ã¶¼»áokµÄ-->
+			<!--åŸºæœ¬çš„çŸ¥è¯†å’Œå…¶å®ƒè¯­è¨€å·®ä¸å¤šï¼ŒåŒ…æ‹¬ifã€switchã€é€’å½’ã€å‡½æ•°ã€å‡½æ•°æŒ‡é’ˆç­‰ï¼Œå­¦è¿‡å…¶å®ƒè¯­è¨€åº”è¯¥éƒ½ä¼šokçš„-->
 			var a = 20;
 			var b = 20;
 			document.write("<a style='" + "border: 1px solid blue; background:green;" + "'>" + a+b + "</a>");
 
-			<!--²»Í¬Êı¾İÀàĞÍµÄÊı×é£¬ÀàËÆobject[]-->
+			<!--ä¸åŒæ•°æ®ç±»å‹çš„æ•°ç»„ï¼Œç±»ä¼¼object[]-->
 			var c = [2, 2, 3, 4, "a", 11.00021];
 			for (var i = 0; i < c.length; ++i)
 			{
@@ -27,7 +27,7 @@
 		<script type="text/javascript">
 			function objF()
 			{
-				var sex = "man";	/*undefined¡¾secret¡¿*/
+				var sex = "man";	/*undefinedã€secretã€‘*/
 				name = "xiaoli";	/*undefined*/
 				this.age = 12;
 				this.show = function show()
@@ -36,15 +36,15 @@
 				}
 			}
 			var oj = new objF();
-			document.write("<a style='" + "border: 1px solid blue; background:green;" + "'>" + "¹Ë¿Í´óÈË: " + oj.name + " " + oj.age + " " + oj.sex + " " + oj.show() + "</a>");
+			document.write("<a style='" + "border: 1px solid blue; background:green;" + "'>" + "é¡¾å®¢å¤§äºº: " + oj.name + " " + oj.age + " " + oj.sex + " " + oj.show() + "</a>");
 		</script>
-		<!--¿ªÊ¼ÖÆ×÷ ÀûÓÃÏà¶Ô²¼¾Ö½øĞĞ¶¨Î»ºÍ·¶Î§µÄÏŞ¶¨¡¾ÕıºÃ¿ÉÒÔÀûÓÃdivµÄ¿í¶ÈºÍ¸ß¶È¡¢ºÍÍ¼Æ¬×ÔÉí´óĞ¡½øĞĞÏà¹Ø¼ÆËã¡¿-->
+		<!--å¼€å§‹åˆ¶ä½œ åˆ©ç”¨ç›¸å¯¹å¸ƒå±€è¿›è¡Œå®šä½å’ŒèŒƒå›´çš„é™å®šã€æ­£å¥½å¯ä»¥åˆ©ç”¨divçš„å®½åº¦å’Œé«˜åº¦ã€å’Œå›¾ç‰‡è‡ªèº«å¤§å°è¿›è¡Œç›¸å…³è®¡ç®—ã€‘-->
 		<script type="text/javascript" language=JavaScript charset="UTF-8">
-			///< ³õÊ¼»¯Êı¾İ
+			///< åˆå§‹åŒ–æ•°æ®
 			init();
-			///< µ÷ÓÃ·½Ïò¼ü£¬·½Ïò¼üÒª´¦ÀíËùÓĞµÄÊÂ¼ş¡¾Åö×²¡¢Ô½½çµÈ¡¿
+			///< è°ƒç”¨æ–¹å‘é”®ï¼Œæ–¹å‘é”®è¦å¤„ç†æ‰€æœ‰çš„äº‹ä»¶ã€ç¢°æ’ã€è¶Šç•Œç­‰ã€‘
 			keycontrol();
-			/*¹¹ÔìµÚÒ»ÌõÂíÂ·µÄÕÏ°­Îï¡¾´ÓÏÂÍùÉÏÊı¡¿5s²úÉúÒ»¸öÕÏ°­Îï*/
+			/*æ„é€ ç¬¬ä¸€æ¡é©¬è·¯çš„éšœç¢ç‰©ã€ä»ä¸‹å¾€ä¸Šæ•°ã€‘5säº§ç”Ÿä¸€ä¸ªéšœç¢ç‰©*/
 			setInterval("randomRoad1()", 5000);
 		</script>
 	</head>
@@ -54,12 +54,12 @@
 			<div style="float:right">
 				<a style="color:red; margin-right:20px; font-size:25px">@TEST</a>
 			</div>
-			<input type="button" onclick="variableParams()" value="ÏÔÊ¾ÏûÏ¢¿ò" />
+			<input type="button" onclick="variableParams()" value="æ˜¾ç¤ºæ¶ˆæ¯æ¡†" />
 			
 			</br>
 				<script type="text/javascript">
 					document.write("xxx");
-					/**¹²ÓÃÒ»¸ömesageº¯Êı£¬Í¬Ê±ºó´«ÈëµÄ¹¹Ôìº¯ÊıµÄ²ÎÊı½«×÷Îª×îºóµÄÖµ±»»ñÈ¡****/
+					/**å…±ç”¨ä¸€ä¸ªmesageå‡½æ•°ï¼ŒåŒæ—¶åä¼ å…¥çš„æ„é€ å‡½æ•°çš„å‚æ•°å°†ä½œä¸ºæœ€åçš„å€¼è¢«è·å–****/
 					var sh1 = new share("tet", "tet2");
 					var sh2 = new share("tet5", "tet6");
 					var sh3 = new share("tet8", "tet9");
@@ -67,30 +67,30 @@
 					{
 						sh1.message();	/**tet5 tet6*/
 						sh2.message();	/**tet5 tet6*/
-						document.write("ÏàÍ¬");
+						document.write("ç›¸åŒ");
 					}
 					else
 					{
 						sh1.message();
 						sh2.message();
-						document.write("²»Í¬");
+						document.write("ä¸åŒ");
 					}
 				</script>
 			</br>
 
 			</br>
 				<script type="text/javascript">
-					<!--@¶¯Ì¬ÏÔÊ¾......¹¦ÄÜ£¬ÀûÓÃ¶¨Ê±Ö´ĞĞº¯Êı-->
+					<!--@åŠ¨æ€æ˜¾ç¤º......åŠŸèƒ½ï¼Œåˆ©ç”¨å®šæ—¶æ‰§è¡Œå‡½æ•°-->
 					setInterval("rollingdot()", 200);
 				</script>
 			</br>		
 		</div>
 
-		<h1 id="myHeader" onclick="toGameCenter()"><a href="#" style="text-decoration:underline;">ÏÂÃæ¿ªÊ¼Ğ¡ÓÎÏ·</a></h1>
+		<h1 id="myHeader" onclick="toGameCenter()"><a href="#" style="text-decoration:underline;">ä¸‹é¢å¼€å§‹å°æ¸¸æˆ</a></h1>
 
-		<h1><font size=5 color="red" >ÌáÊ¾£ºW A D SÊÇ·½Ïò¿ØÖÆ¼ü</font></h1>
+		<h1><font size=5 color="red" >æç¤ºï¼šW A D Sæ˜¯æ–¹å‘æ§åˆ¶é”®</font></h1>
 
-		<!--¹¹ÔìÌìÌì¹ıÂíÂ·³¡¾° 800*380£¬ ×Ü¹ıĞèÒª¹ıËÄÌõÂíÂ·£¬ Ã¿Ìõ¸ß¶È76-->
+		<!--æ„é€ å¤©å¤©è¿‡é©¬è·¯åœºæ™¯ 800*380ï¼Œ æ€»è¿‡éœ€è¦è¿‡å››æ¡é©¬è·¯ï¼Œ æ¯æ¡é«˜åº¦76-->
 		<div id="scene" style="border: 1px solid blue; background:gray; height:380px; width:798px; margin:auto">
 			<div style="border: 0px solid blue; background:#40E0D0; height:76px; width:100%px;"></div>
 			<div style="border: 0px solid blue; background:#228B22; height:76px; width:100%px;"></div>
