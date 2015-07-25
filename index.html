@@ -17,7 +17,11 @@
 
   </head>
   <body>
-	<EMBED id="bgMusic" src="music/Everybody Knows I Love You.mp3" volume="10" autostart="true" loop="true" hidden="true"> 
+	<!--<EMBED id="bgMusic" src="music/Everybody Knows I Love You.mp3" volume="10" autostart="false" loop="true" hidden="none">--> 
+	
+	<audio id="bgMusic" autoplay loop>
+		<source src="music/Everybody Knows I Love You.mp3" type="audio/mpeg" />
+	</audio>
 
     <div class="wrapper">
       <header>
@@ -25,7 +29,7 @@
         <p>Just caml down!</p>
         <p class="view"><a href="https://github.com/errovenus">View the Project on GitHub <small>errovenus</small></a></p>
         <ul>
-		  <li class="single"><a id="music_status" href="javascript:void(0)" onclick="playControl()">PLAY <strong>MUSIC</strong></a></li>
+		  <li class="single"><a id="music_status" href="javascript:void(0)" onclick="playControl()">PAUSE <strong>MUSIC</strong></a></li>
 		  <li style="width:0px;"><hr style="height:38px; width:1px;" /></li>
           <li class="single"><a href="https://github.com/errovenus/errovenus.github.io">View On <strong>GitHub</strong></a></li>
         </ul>
