@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
     <script src="javascripts/scale.fix.js"></script>
 	<script src="javascripts/music.js"></script>
+	<script src="javascripts/mengmeng.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
     <!--[if lt IE 9]>
@@ -16,50 +17,56 @@
     <![endif]-->
 
   </head>
-  <body>
+  <body onscroll="mengshow()">
 	<!--<EMBED id="bgMusic" src="music/Everybody Knows I Love You.mp3" volume="10" autostart="false" loop="true" hidden="none">--> 
 	
 	<audio id="bgMusic" autoplay loop>
 		<source src="music/Everybody Knows I Love You.mp3" type="audio/mpeg" />
 	</audio>
 
+	
+	<iframe id="leftmeng" src="lefterea.html" name="ifrm" id="ifrm" width="150" height="150" style="position: fixed;z-index:1001;top:210px;left:0px;border:0px"></iframe>
+	
+	<iframe id="rightmeng" src="righterea.html" name="ifrm" id="ifrm" width="150" height="150" style="position: fixed;z-index:1001;top:210px;right:0px;border:0px"></iframe>
+	
+
     <div class="wrapper">
-      <header>
-        <h1>网络小坚果</h1>
-        <p>Just caml down!</p>
-        <p class="view"><a href="https://github.com/errovenus">View the Project on GitHub <small>errovenus</small></a></p>
-        <ul>
-		  <li class="single"><a id="music_status" href="javascript:void(0)" onclick="playControl()">PAUSE <strong>MUSIC</strong></a></li>
-		  <li style="width:0px;"><hr style="height:38px; width:1px;" /></li>
-          <li class="single"><a href="https://github.com/errovenus/errovenus.github.io">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
- <h1>
-<a id="errovenusgithubio" class="anchor" href="#errovenusgithubio" aria-hidden="true"><span class="octicon octicon-link"></span></a>隔&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;壁 <a href="http://lego.blog.chinaunix.net" target="_blank" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lego.blog.chinaunix.net</a></h1>
+		<header>
+			<h1>网络小坚果</h1>
+			<p>Just caml down!</p>
+			<p class="view"><a href="https://github.com/errovenus">View the Project on GitHub <small>errovenus</small></a></p>
+			<ul>
+			  <li class="single"><a id="music_status" href="javascript:void(0)" onclick="playControl()">PAUSE <strong>MUSIC</strong></a></li>
+			  <li style="width:0px;"><hr style="height:38px; width:1px;" /></li>
+			  <li class="single"><a href="https://github.com/errovenus/errovenus.github.io">View On <strong>GitHub</strong></a></li>
+			</ul>
+		</header>
+		<section>
+			<h1>
+			<a id="errovenusgithubio" class="anchor" href="#errovenusgithubio" aria-hidden="true"><span class="octicon octicon-link"></span></a>隔&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;壁 <a href="http://lego.blog.chinaunix.net" target="_blank" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lego.blog.chinaunix.net</a></h1>
 
-<h1>
-<a id="errovenusgithubio" class="anchor" href="#errovenusgithubio" aria-hidden="true"><span class="octicon octicon-link"></span></a>感&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;恩 <a href="thankfull.html" target="_blank" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;thankfull...</a></h1>
+			<h1>
+			<a id="errovenusgithubio" class="anchor" href="#errovenusgithubio" aria-hidden="true"><span class="octicon octicon-link"></span></a>感&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;恩 <a href="thankfull.html" target="_blank" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;thankfull...</a></h1>
 
-<h1>
-<a id="errovenusgithubio" class="anchor" href="#errovenusgithubio" aria-hidden="true"><span class="octicon octicon-link"></span></a>小碰撞<a href="collide.html" target="_blank" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DuangDuang</a></h1>
+			<h1>
+			<a id="errovenusgithubio" class="anchor" href="#errovenusgithubio" aria-hidden="true"><span class="octicon octicon-link"></span></a>小碰撞<a href="collide.html" target="_blank" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DuangDuang</a></h1>
 
-<div class="sourcestyle">
-	</br>
-	<a id="errovenusgithubio" class="anchor" href="#errovenusgithubio" aria-hidden="true"><span class="octicon octicon-link"></span></a><a style="font-size:150%" href="codesources/list.rar">仿迅雷Android版-多线程下载Demo源码</a>
-	
-	<hr width=80% size=3 color=#00ffff style="FILTER: alpha(opacity=100,finishopacity=0,style=3)"> 
+			<div class="sourcestyle">
+				</br>
+				<a id="errovenusgithubio" class="anchor" href="#errovenusgithubio" aria-hidden="true"><span class="octicon octicon-link"></span></a><a style="font-size:150%" href="codesources/list.rar">仿迅雷Android版-多线程下载Demo源码</a>
+				
+				<hr width=80% size=3 color=#00ffff style="FILTER: alpha(opacity=100,finishopacity=0,style=3)"> 
 
-	<a id="errovenusgithubio" class="anchor" href="#errovenusgithubio" aria-hidden="true"><span class="octicon octicon-link"></span></a><a style="font-size:150%" href="codesources/AndroidPNConcurrency.rar">仿迅雷Android版-AndroidPN推送Demo源码</a> 
-	
-	<hr width=80% size=3 color=#00ffff style="FILTER: alpha(opacity=100,finishopacity=0,style=3)"> 
+				<a id="errovenusgithubio" class="anchor" href="#errovenusgithubio" aria-hidden="true"><span class="octicon octicon-link"></span></a><a style="font-size:150%" href="codesources/AndroidPNConcurrency.rar">仿迅雷Android版-AndroidPN推送Demo源码</a> 
+				
+				<hr width=80% size=3 color=#00ffff style="FILTER: alpha(opacity=100,finishopacity=0,style=3)"> 
 
-	<a id="errovenusgithubio" class="anchor" href="#errovenusgithubio" aria-hidden="true"><span class="octicon octicon-link"></span></a><a style="font-size:150%" href="codesources/HC_HeyClock.rar">HeyClock闹钟源码</a>
+				<a id="errovenusgithubio" class="anchor" href="#errovenusgithubio" aria-hidden="true"><span class="octicon octicon-link"></span></a><a style="font-size:150%" href="codesources/HC_HeyClock.rar">HeyClock闹钟源码</a>
 
-	<hr width=80% size=3 color=#00ffff style="FILTER: alpha(opacity=100,finishopacity=0,style=3)"> 
-</div>
-      </section>
-    </div>
+				<hr width=80% size=3 color=#00ffff style="FILTER: alpha(opacity=100,finishopacity=0,style=3)"> 
+			</div>
+		</section>
+	</div>
     <footer>
       <p>All rights by GitHub Pages @modify by HuangLei</p>
     </footer>
