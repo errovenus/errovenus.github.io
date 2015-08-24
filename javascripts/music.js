@@ -1,8 +1,8 @@
 var bPlay = true;
 
-function playControl()
+function playControl(obj)
 {
-	var ms = document.getElementById("music_status");
+	var ms = document.getElementById(obj.id);
 	var bm = document.getElementById("bgMusic");
 
 	if (bPlay)
@@ -13,7 +13,7 @@ function playControl()
 	}
 	else
 	{
-		var ms = document.getElementById("music_status");
+		//var ms = document.getElementById(obj.id);
 		ms.innerHTML = "PAUSE <strong>MUSIC</strong>";
 		bm.play(); ///< ²¥·Å
 		bPlay = true;
