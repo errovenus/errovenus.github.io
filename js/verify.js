@@ -2,11 +2,11 @@ function toVaild()
 {
 	var cc = document.getElementById("cc");
 	var bcc = document.getElementById("bcc");
-	if(cc.value == "ÃÜËÍ")
+	if(cc.value == "å¯†é€")
 	{
 		cc.value="";
 	}
-	if(bcc.value == "³­ËÍ")
+	if(bcc.value == "æŠ„é€")
 	{
 		bcc.value="";
 	}

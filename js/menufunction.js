@@ -1,6 +1,6 @@
 function showTipTodo()
 {
-	window.alert("Å¬Á¦ÖÐ...");
+	window.alert("åŠªåŠ›ä¸­...");
 }
 
 function printPage()
