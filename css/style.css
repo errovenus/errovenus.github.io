@@ -85,7 +85,7 @@ address span{
 .glyphicon {
   top:1px;
 }
-.glyphicon-file:before,.glyphicon-share:before,.glyphicon-envelope:before,.glyphicon-picture:before,.glyphicon-print:before{
+.glyphicon-file:before,.glyphicon-share:before,.glyphicon-envelope:before,.glyphicon-picture:before,.glyphicon-print:before,.glyphicon-retweet:before{
     margin-right: 9px;
   font-size: 14px;
   color: #6ecadc;
