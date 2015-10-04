@@ -80,10 +80,27 @@
         <div class="live-back">
         	<img class="live-img" src="images/placeholder/large_blank620.jpg" alt="Article 1"/>
         </div>
-        <span class="tile-date redtxt"><span class="date">09</span><span class="month">July</span></span>
+        <span class="tile-date redtxt"><span id="month" class="month">July</span><span id="day" class="date">Monday</span></span>
         <span class="tile-cat red">小布点</span>
     </div>
 </a>
+	<!-- Date -->
+	<script type="text/javascript">
+		  var today = new Date();
+		  var date = today.getDate();
+		  var day = today.getDay();
+		  var month = today.getMonth();
+		  var year = today.getYear();
+		  if(day==0) var xingqi = "星期日";
+		  if(day==2) var xingqi = "星期二";
+		  var dateString  = today.toLocaleDateString(); //这个是显示的效果比较好
+		  var dateAndTime = today.toLocaleString(); 
+		  var time = today.toLocaleTimeString();
+		  var hour = today.getHours();
+		  var minute = today.getMinutes();
+		  document.getElementById("month").innerHTML=(month+1) + "." + date;
+		  document.getElementById("day").innerHTML=xingqi;
+	</script>
 	<!-- Lightbox Article Preview -->
     <div class="tile-pre">
     <article id="article-1" class="lb-article">
@@ -91,10 +108,10 @@
         <div class="flexslider postslide">
         <ul class="slides">
     	<li>
-        <img class="tile-pre-img" src="images/placeholder/blog_pre_blank.png" alt="Article 1" />
+        <img class="tile-pre-img" src="images/placeholder/article-101.jpg" alt="Article 1" />
         </li>
         <li>
-        <img class="tile-pre-img" src="images/placeholder/blog_pre_blank.png" alt="Article 1" />
+        <img class="tile-pre-img" src="images/placeholder/article-102.jpg" alt="Article 1" />
         </li>
         </ul>
         </div>
@@ -125,7 +142,33 @@
 	<!-- Lightbox Article Preview -->
     <div class="tile-pre">
     <article id="article-2" class="lb-article">
-    <div class="article-img">
+    <div class="portfolio-img">
+		<img class="tile-pre-img" src="images/placeholder/heyclock1.jpg" alt="Project Four" />
+		<hr width=100% size=3 color=#000000 style="FILTER: alpha(opacity=100,finishopacity=0,style=3)">
+		<img class="tile-pre-img" src="images/placeholder/fxunlei1.png" alt="Project Four" />
+    </div>
+    <div class="lb-port-cont">
+        <h1 class="lb-project"><a href="#">项目列表</a></h1>
+        <div class="lb-excerpt">
+				<hr width=100% size=3 color=#00ffff style="FILTER: alpha(opacity=100,finishopacity=0,style=3)">
+				</br>
+				<a id="errovenusgithubio" class="anchor" href="#errovenusgithubio" aria-hidden="true"><span class="octicon octicon-link"></span></a><a style="font-size:150%" href="codesources/list.rar">仿迅雷Android版-多线程下载Demo源码</a>
+				</br></br>
+				<hr width=100% size=3 color=#00ffff style="FILTER: alpha(opacity=100,finishopacity=0,style=3)"> 
+				</br>
+				<a id="errovenusgithubio" class="anchor" href="#errovenusgithubio" aria-hidden="true"><span class="octicon octicon-link"></span></a><a style="font-size:150%" href="codesources/AndroidPNConcurrency.rar">仿迅雷Android版-AndroidPN推送Demo源码</a> 
+				</br></br>
+				<hr width=100% size=3 color=#00ffff style="FILTER: alpha(opacity=100,finishopacity=0,style=3)"> 
+				</br>
+				<a id="errovenusgithubio" class="anchor" href="#errovenusgithubio" aria-hidden="true"><span class="octicon octicon-link"></span></a><a style="font-size:150%" href="codesources/HC_HeyClock.rar">HeyClock闹钟源码</a>
+				</br></br>
+				<hr width=100% size=3 color=#00ffff style="FILTER: alpha(opacity=100,finishopacity=0,style=3)">
+            <!--<p><a class="exp-button" href="singleblogpost-1.html">View More &#8594;</a></p>-->
+        </div>
+    </div>
+    </article>
+    </div>
+    <!--<div class="article-img">
     	<div class="flexslider postslide">
         <ul class="slides">
         <li>
@@ -145,7 +188,7 @@
         <p><a class="exp-button" href="singleblogpost-1.html">Read More &#8594;</a></p>
     </div>
     </article>
-    </div>
+    </div>-->
     
 <!-- Tile 3 -->
 <!--<a href="#portfolio-1" class="lightbox" rel="section"> -->
@@ -254,14 +297,25 @@
     <div class="tile-pre">
     <article id="portfolio-4" class="lb-portfolio">
     <div class="portfolio-img">
-    <img class="tile-pre-img" src="images/placeholder/portfolio_pre_blank.png" alt="Project Four" />
+    <img class="tile-pre-img" src="images/placeholder/fcraft1.jpg" alt="Project Four" />
+	<hr width=100% size=3 color=#000000 style="FILTER: alpha(opacity=100,finishopacity=0,style=3)"> 
+	<img class="tile-pre-img" src="images/placeholder/icar1.jpg" alt="Project Four" />
     </div>
     <div class="lb-port-cont">
-        <h1 class="lb-project"><a href="singleportfolio.html">Project Four</a></h1>
-        <span class="projectcat tealtxt">Graphic Design</span>
+        <h1 class="lb-project"><a href="#">项目列表</a></h1>
         <div class="lb-desc">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sagittis sollicitudin aliquet. Nullam ut sapien eros, aliquet gravida turpis. Cras nec risus magna. Morbi laoreet molestie odio sed ultrices. Maecenas eget elit orci. Etiam rhoncus urna vitae neque accumsan et vehicula dolor varius. Praesent tellus velit.</p>
-            <p><a class="exp-button" href="singleportfolio.html">View More &#8594;</a></p>
+            <hr width=100% size=3 color=#00ffff style="FILTER: alpha(opacity=100,finishopacity=0,style=3)">
+				</br>
+				<a id="errovenusgithubio" class="anchor" href="#errovenusgithubio" aria-hidden="true"><span class="octicon octicon-link"></span></a><a style="font-size:150%" href="codesources/#">
+				Unity3D仿MineCraft累方块简单版-整理中...</a>
+				</br></br>
+				<hr width=100% size=3 color=#00ffff style="FILTER: alpha(opacity=100,finishopacity=0,style=3)"> 
+				</br>
+				<a id="errovenusgithubio" class="anchor" href="#errovenusgithubio" aria-hidden="true"><span class="octicon octicon-link"></span></a><a style="font-size:150%" href="codesources/#">
+				更多正在整理中...</a>
+				</br></br>
+				<hr width=100% size=3 color=#00ffff style="FILTER: alpha(opacity=100,finishopacity=0,style=3)"> 
+            <!--<p><a class="exp-button" href="singleportfolio.html">View More &#8594;</a></p>-->
         </div>
     </div>
     </article>
