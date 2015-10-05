@@ -47,7 +47,7 @@
         <ul class="slides">
             <li>
             <img src="images/slide1.jpg" alt="Responsive" />
-            <p class="flex-title">趁年轻</p>
+            <p class="flex-title">趁还年轻</p>
             </li>
             <li>
             <img src="images/slide2.jpg" alt="Tile Design" />
@@ -91,8 +91,14 @@
 		  var day = today.getDay();
 		  var month = today.getMonth();
 		  var year = today.getYear();
-		  if(day==0) var xingqi = "星期日";
-		  if(day==2) var xingqi = "星期二";
+		  var xingqi = "";
+		  if(day==0) xingqi = "星期日";
+		  if(day==1) xingqi = "星期一";
+		  if(day==2) xingqi = "星期二";
+		  if(day==3) xingqi = "星期三";
+		  if(day==4) xingqi = "星期四";
+		  if(day==5) xingqi = "星期五";
+		  if(day==6) xingqi = "星期六";
 		  var dateString  = today.toLocaleDateString(); //这个是显示的效果比较好
 		  var dateAndTime = today.toLocaleString(); 
 		  var time = today.toLocaleTimeString();
